@@ -1,0 +1,34 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 80px;
+    line-height: 80px;
+    visibility: visible;
+    background: rgb(18, 18, 18);
+    font-family: Arial;
+    animation-name: preloader;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.preloader div{
+    width: 25%;
+    height: 300px;
+    background: url(../img/app-icon.jpeg) no-repeat center;
+    background-size: cover;
+}
+.preloader_hidden{
+    opacity: 0;
+    transition: ease 1s;
+    visibility: hidden;
+}
