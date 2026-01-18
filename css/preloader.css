@@ -15,14 +15,14 @@
     font-size: 80px;
     line-height: 80px;
     visibility: visible;
-    background: rgb(18, 18, 18);
+    background: #13121f;
     font-family: Arial;
     animation-name: preloader;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 .preloader div{
-    width: 25%;
+    width: 100%;
     height: 300px;
     background: url(../img/app-icon.jpeg) no-repeat center;
     background-size: cover;

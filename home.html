@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AthloRadar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/theme-slider.css">
+</head>
+<body style="background: #f1fff2;">
+    <div class="preloader">
+        <div></div>
+    </div>
+    <div class="navbar">
+        <a href="home.html" class="focused"></i><img src="img/house-fill.svg" class="nav-icons"></a>
+        <a href="favorite.html"><img src="img/star.svg" class="nav-icons"></i></a>
+        <a href="category.html"><img src="img/category.svg" class="nav-icons"></i></a>
+        <a href="event.html"><img src="img/event.svg" class="nav-icons"></a>
+    </div>
+    <header>
+        <div class="profile-icon"></div>
+        <div class="address-line"><h3>Paul-Henri Spaaklaan 3D</h3><br><h4>What's nearby:</h4></div>
+        <label class="switch">
+            <input id="toggleSwitch" type="checkbox" onclick="SwitchTheme()">
+            <span class="slider"></span>
+        </label>
+    </header>
+    <div class="nearby-content">
+        <div class="content-card">
+            <img src="img/karate.png">
+            <h3>Karate Limburg</h3>
+            <div class="card-info"><h4>Karate 3.1km 22€/month</h4></div>
+        </div>
+        <div class="content-card">
+            <img src="img/bouldering.png">
+            <h3>Boulder lion</h3>
+            <div class="card-info"><h4>Bouldering 4.0km 38€/month</h4></div>
+        </div>
+        <div class="content-card">
+            <img src="img/mini-golf.png">
+            <h3>Golf PRO</h3>
+            <div class="card-info"><h4>Mini-golf 7.4km 14€/month</h4></div>
+        </div>
+        <div class="content-card"">
+            <img src="img/gym.png">
+            <h3>PUSH-PULL</h3>
+            <div class="card-info"><h4>Gym 9.2km 30€/month</h4></div>
+        </div>
+    </div>
+    <script src="scripts/Preloader.js"></script>
+    <script src="scripts/Slider.js"></script>
+</body>
+</html>
