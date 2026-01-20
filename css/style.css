@@ -7,6 +7,7 @@
     margin: 0px;
     -webkit-tap-highlight-color: transparent;
     --mb: 10px;
+    --filter: invert(98%) sepia(69%) saturate(873%) hue-rotate(24deg) brightness(87%) contrast(129%);;
 }
 body{
     background: #f1fff2;
@@ -31,7 +32,7 @@ body{
 .nav-icons{
     width: 25px;
     height: 25px;
-    filter: invert(98%) sepia(69%) saturate(873%) hue-rotate(24deg) brightness(87%) contrast(129%);
+    filter: var(--filter);
 }
 header{
     display: flex;
@@ -55,17 +56,18 @@ header h3{
     text-decoration: underline 2px;
 }
 .settings-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    filter: invert(98%) sepia(69%) saturate(873%) hue-rotate(24deg) brightness(87%) contrast(129%);
 }
 .settings-button img{
+    width: 40px;
+    height: 40px;
     position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
     transition: .2s;
+    filter: var(--filter);
 }
 .settings-button img:nth-child(2){
     opacity: 0;
@@ -90,7 +92,20 @@ header h3{
 .content-card:last-child{
     margin-bottom: calc(var(--mb) + 60px);
 }
-.content-card img{
+.absolute-domain{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+}
+.favorite-button{
+    filter: var(--filter);
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+}
+.card-pic{
     width: 100%;
     height: 75%;
     border-radius: 10px 10px 0px 0px;
@@ -110,6 +125,7 @@ header h3{
 .category-card{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 20px 0px 30px 0px;
     width: 40%;
@@ -120,8 +136,8 @@ header h3{
     font-size: 15px;
 }
 .category-card img{
-    width: 100%;
-    filter: invert(98%) sepia(69%) saturate(873%) hue-rotate(24deg) brightness(87%) contrast(129%);
+    width: 90%;
+    filter: var(--filter);
 }
 .category-card:last-child{
     margin-bottom: calc(var(--mb) + 60px);
