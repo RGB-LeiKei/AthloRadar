@@ -1,4 +1,6 @@
 .preloader{
+    will-change: opacity, transform;
+    backface-visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,6 +31,7 @@
 }
 .preloader_hidden{
     opacity: 0;
-    transition: ease 1s;
+    transition: ease 0.5s;
     visibility: hidden;
+    pointer-events: none;
 }

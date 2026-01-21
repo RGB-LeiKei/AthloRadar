@@ -128,7 +128,7 @@ header h3{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 45vh;
+    height: 45svh;
 }
 .favorites-container{
     display: flex;
@@ -244,4 +244,35 @@ header h3{
     height: 50px;
     border-radius: 4px;
     margin: 6px 0px 0px 6px;
+}
+
+/*description-tab.html part */
+
+.description-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #564D80;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+}
+.description-body *{
+    margin-bottom: 20px;
+}
+.description-body img{
+    width: 100%;
+    height: 40vh;
+}
+.details{
+    margin-left: 5px;
+    text-align: start;
+}
+.details-description{
+    display: none;
+}
+span{
+    display: block;
+}
+.details:hover h3 span{
+    transform: rotate(-90deg);
 }

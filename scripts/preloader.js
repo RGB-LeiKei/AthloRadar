@@ -1,6 +1,12 @@
-window.addEventListener('load', () => { /* Страница загружена, включая все ресурсы */
+window.addEventListener('load', async () => {
+    const preloader = document.querySelector('.preloader');
+    if (!preloader) return;
 
-    const preloader = document.querySelector('.preloader') /* находим блок Preloader */
+    if (document.fonts?.ready) {
+        await document.fonts.ready;
+    }
 
-    preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
-})
+    requestAnimationFrame(() => {
+        preloader.classList.add('preloader_hidden');
+    });
+});
