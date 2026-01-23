@@ -14,4 +14,5 @@ cardImgs.forEach((cardImg, index) => {
 
     domain.style.width = imgWidth + "px";
     domain.style.height = imgHeight + "px";
+    console.log(imgWidth)
 });
