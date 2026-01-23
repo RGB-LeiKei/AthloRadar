@@ -6,10 +6,11 @@
     <title>Description</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crowdedness-meter.css">
 </head>
 <body>
     <div class="navbar">
-        <a href="../index.html"></i><img src="../img/house-fill.svg" class="nav-icons"></a>
+        <a href="../index.html"></i><img src="../img/house.svg" class="nav-icons"></a>
         <a href="../favorite.html"><img src="../img/star.svg" class="nav-icons"></i></a>
         <a href="../category.html"><img src="../img/category.svg" class="nav-icons"></i></a>
         <a href="../event.html"><img src="../img/event.svg" class="nav-icons"></a>
@@ -17,9 +18,50 @@
     <div class="description-body">
         <img src="../img/index/karate.png">
         <div  class="details">
-            <h3>Type of sport: Karate </h3><span><</span>
+            <h1>Karate Limburg</h1>
+            <h2 class="price">22€/month</h2>
+            <label class="arrow-toggle">
+                <h3>Type of sport: Karate </h3>
+                <input type="checkbox" onclick="checkboxAction(this)">
+                <span class="arrow"></span>
+            </label>
             <div class="details-description"><h4>Karate is a Japanese martial art developed in Okinawa, focusing on striking techniques (punches, kicks, elbow/knee strikes, open-handed blocks) for self-defense, rooted in physical discipline, mental focus, and character development, often summarized by the principle, "You never attack first". Its name means "empty hand," symbolizing unarmed combat, and training involves basics (kihon), forms (kata), and sparring (kumite) to build strength, agility, balance, and self-mastery. </h4></div>
+            <h3>Crowdedness meter</h3>
+            <div class="crowdedness-week">
+                <div class="day">
+                    <span class="label">Mon</span>
+                    <div class="meter" data-level="2"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Tue</span>
+                    <div class="meter" data-level="3"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Wed</span>
+                    <div class="meter" data-level="1"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Thu</span>
+                    <div class="meter" data-level="4"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Fri</span>
+                    <div class="meter" data-level="5"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Sat</span>
+                    <div class="meter" data-level="5"></div>
+                </div>
+                <div class="day">
+                    <span class="label">Sun</span>
+                    <div class="meter" data-level="2"></div>
+                </div>
+            </div>
+            <h2>Location:</h2>
+            <h4>Haarlemmerdijk 475, 1013 KA, Maastricht</h4>
+            <a href="" class="map-button">Show on the map</a>
         </div>
     </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

@@ -16,3 +16,13 @@ cardImgs.forEach((cardImg, index) => {
     domain.style.height = imgHeight + "px";
     console.log(imgWidth)
 });
+
+const details_description = document.querySelector(".details-description")
+
+function checkboxAction(checkboxElem){
+    if (checkboxElem.checked){
+        details_description.style.display = "block"
+    } else {
+        details_description.style.display = "none"
+    }
+}

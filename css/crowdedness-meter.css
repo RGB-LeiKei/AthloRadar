@@ -1,0 +1,40 @@
+.crowdedness-week{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-family: system-ui, sans-serif;
+    margin: 0px;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11%;
+}
+.label{
+    font-size: 14px;
+}
+.meter{
+    width: 100%;
+    height: 80px;
+    background: #f1fff2;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.meter::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #C2F970;
+    transition: height 0.3s ease;
+}
+
+.meter[data-level="1"]::after { height: 20%; }
+.meter[data-level="2"]::after { height: 40%; }
+.meter[data-level="3"]::after { height: 60%; }
+.meter[data-level="4"]::after { height: 80%; }
+.meter[data-level="5"]::after { height: 100%; }

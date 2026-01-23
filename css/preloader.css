@@ -29,19 +29,18 @@
     background: url(../img/app-icon.jpeg) no-repeat center;
     background-size: cover;
 }
-.preloader h3{
+.preloader h6{
     display: none;
 }
 .preloader_hidden{
     opacity: 0;
     transition: ease 0.5s;
     visibility: hidden;
-    pointer-events: none;
 }
 
-@media only screen and (min-width: 780px){
+@media only screen and (min-width: 500px){
     .preloader div{
-        width: 50%;
+        width: 42%;
         height: 65vh;
     }
     .preloader h3{
